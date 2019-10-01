@@ -223,6 +223,7 @@ def find_mins(commod_dict):
         for fac, dic in proto.items():
             if dic['cap'] < commod_min[commod]:
                 commod_min[commod] = dic['cap']
+    print(commod_min)
     return commod_min
 
 def decommission_oldest(agent, commod_dict, diff, commod, time):
